@@ -206,7 +206,7 @@
 									transition:fade
 								/>
 								{#if carBrandHasError == true}
-									<p class="error-alert">{@html carBrandHasErrorMessage}</p>
+									<p class="error-alert">{carBrandHasErrorMessage}</p>
 								{/if}
 							</div>
 							<div class="col-lg-6 col-md-12 pb-3">
@@ -304,10 +304,10 @@
 </section>
 
 <style>
-	.container {
+	/* .container {
 		max-width: 1200px;
 		margin: 0 auto;
-	}
+	} */
 
 	h2 {
 		margin-top: 0;
