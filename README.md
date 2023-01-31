@@ -1,0 +1,1 @@
+This is svelte project for testing
