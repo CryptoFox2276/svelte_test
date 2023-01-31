@@ -1,10 +1,9 @@
 <script>
-	import { memory } from './stores.js';
+	import { memory, step } from './stores.js';
 	import { getNotificationsContext } from 'svelte-notifications';
 	import { spring, tweened } from 'svelte/motion';
 	import { quintOut } from 'svelte/easing';
 	import { fade, fly } from 'svelte/transition';
-	import { step } from './stores.js';
 
 	const { addNotification } = getNotificationsContext();
 	const progress = tweened(0, {
@@ -12,7 +11,7 @@
 		easing: quintOut
 	});
 
-	let currentStep;
+	let currentStep = 0;
 	const unsubscribe = step.subscribe((value) => {
 		currentStep = value;
 	});
