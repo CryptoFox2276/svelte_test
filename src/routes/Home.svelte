@@ -8,7 +8,7 @@
 
 	const { addNotification } = getNotificationsContext();
 	const progress = tweened(0, {
-		duration: 1000,
+		duration: 6000,
 		easing: quintOut
 	});
 
